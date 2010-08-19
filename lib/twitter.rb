@@ -6,6 +6,7 @@ require "yajl"
 
 module Twitter
   include HTTParty
+  http_proxy 'http://localhost', 8081
   API_VERSION = "1".freeze
   format :json
 
